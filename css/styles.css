@@ -157,6 +157,25 @@ textarea{
 .nav>li.active>a:active{
     border-bottom-color: #cc3300;
 }
+.logo{
+    font-family: lobster;
+    font-size: 24px;
+    color: #fff;
+
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -o-transition-property: color;
+    transition-property: color;
+
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.logo:hover,
+.logo:focus{
+    color: #cc3300;
+}
 .navbar-beauty{
     padding: 25px 0;
     border: 0;
@@ -179,6 +198,7 @@ textarea{
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.22);
 
 }
+.navbar-shrink .logo,
 .navbar-shrink .nav>li>a{
     color: #cc3300;
 }
@@ -187,7 +207,6 @@ textarea{
 .navbar-shrink .nav>li>a:active{
     border-bottom-color: #cc3300;
 }
-
 
 /*
 .navbar-shrink .navbar-brand {
