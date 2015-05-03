@@ -179,6 +179,12 @@ textarea{
 .logo:focus{
     color: #cc3300;
 }
+.top-phone{
+    color: #fff;
+    padding: 6px 15px;
+    font-family: lobster;
+    font-size: 24px;
+}
 .navbar-beauty{
     padding: 25px 0;
     border: 0;
@@ -202,6 +208,7 @@ textarea{
 
 }
 .navbar-shrink .logo,
+.navbar-shrink .top-phone,
 .navbar-shrink .nav>li>a{
     color: #cc3300;
 }
