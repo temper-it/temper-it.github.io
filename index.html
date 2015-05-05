@@ -65,14 +65,17 @@
       <div class="col-sm-offset-1 col-sm-9
                   col-md-offset-2 col-md-8
                   col-lg-offset-3 col-lg-6">
-        <div class="input-group input-group-lg">
-          <input type="phone" class="form-control" placeholder="Ваш номер телефона" aria-describedby="sizing-addon1">
-          <div class="input-group-btn">
-            <div class="btn-group btn-group-lg" role="group">
-              <button type="button" class="btn btn-default">Заказать звонок</button>
-            </div>
-          </div>
-        </div>
+         <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail">
+           <input type="text" value="temper-it.com" name="hostname" hidden="hidden">
+           <div class="input-group input-group-lg">
+             <input type="phone" class="form-control" placeholder="Ваш номер телефона" aria-describedby="sizing-addon1">
+             <div class="input-group-btn">
+               <div class="btn-group btn-group-lg" role="group">
+                 <button type="button" class="btn btn-default">Заказать звонок</button>
+               </div>
+             </div>
+           </div>
+         </form>
       </div>
     </div>
   </div>
@@ -692,12 +695,15 @@
       </div>
       <div class="col-sm-7 footer-col">
         <div class="input-group input-group-lg text-right">
-          <input type="phone" class="form-control" placeholder="Ваш номер телефона" aria-describedby="sizing-addon1"/>
-          <input type="email" class="form-control" placeholder="Ваш email" aria-describedby="sizing-addon1"/>
-          <textarea class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
-          <div class="btn-group btn-group-lg" role="group">
-            <button type="button" class="btn">Отправить</button>
-          </div>
+          <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail">
+            <input type="text" value="temper-it.com" name="hostname" hidden="hidden">
+            <input type="phone" class="form-control" placeholder="Ваш номер телефона" aria-describedby="sizing-addon1"/>
+            <input type="email" class="form-control" placeholder="Ваш email" aria-describedby="sizing-addon1"/>
+            <textarea class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
+            <div class="btn-group btn-group-lg" role="group">
+              <button type="button" class="btn">Отправить</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
