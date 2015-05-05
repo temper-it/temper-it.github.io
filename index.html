@@ -68,7 +68,7 @@
          <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail">
            <input type="text" value="temper-it.com" name="hostname" hidden="hidden">
            <div class="input-group input-group-lg">
-             <input type="phone" class="form-control" placeholder="Ваш номер телефона" aria-describedby="sizing-addon1">
+             <input type="phone" name="phone" class="form-control" placeholder="Ваш номер телефона" aria-describedby="sizing-addon1">
              <div class="input-group-btn">
                <div class="btn-group btn-group-lg" role="group">
                  <button type="submit" class="btn btn-default">Заказать звонок</button>
@@ -697,9 +697,9 @@
         <div class="input-group input-group-lg text-right">
           <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail">
             <input type="text" value="temper-it.com" name="hostname" hidden="hidden">
-            <input type="phone" class="form-control" placeholder="Ваш номер телефона" aria-describedby="sizing-addon1"/>
-            <input type="email" class="form-control" placeholder="Ваш email" aria-describedby="sizing-addon1"/>
-            <textarea class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
+            <input type="phone" name="phone" class="form-control" placeholder="Ваш номер телефона" aria-describedby="sizing-addon1"/>
+            <input type="email" name="email" class="form-control" placeholder="Ваш email" aria-describedby="sizing-addon1"/>
+            <textarea name="message" class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
             <div class="btn-group btn-group-lg" role="group">
               <button type="submit" class="btn">Отправить</button>
             </div>
