@@ -582,6 +582,9 @@ textarea{
     background-color: #333;
     border: 3px solid #444;
 }
+.footer .input-group .form-control {
+     color: #fff;
+}
 .footer .form-control:focus{
     border-color: #333;
 }
