@@ -670,6 +670,18 @@ textarea{
     }
 }
 
+@media only screen and (max-width: 640px){
+    .top-block{
+        background-image: url('../images/startup-xs.jpg');
+    }
+    .sale1{
+        background-image: url('../images/landscape-xs.jpg');
+    }
+    .sale2{
+        background-image: url('../images/gift-xs.jpg');
+    }
+}
+
 @media only screen and (max-width: 750px){
     /*** Тарифы поддержки ***/
     .tariffs-norm{
