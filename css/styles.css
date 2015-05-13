@@ -1,3 +1,14 @@
+/* font-family: "NautilusPompiliusRegular"; */
+@font-face {
+    font-family: "NautilusPompiliusRegular";
+    src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot");
+    src: url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.woff") format("woff"),
+    url("../fonts/NautilusPompiliusRegular/NautilusPompiliusRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 html{
     height: 100%;
     width: 100%;
@@ -49,7 +60,7 @@ textarea{
     background-color: #cc3300;
 }
 .quote{
-    font-family: lobster;
+    font-family: NautilusPompiliusRegular;
 }
 .quote>p:nth-of-type(2){
     text-align: right;
@@ -164,7 +175,7 @@ textarea{
     border-bottom-color: #cc3300;
 }
 .logo{
-    font-family: lobster;
+    font-family: NautilusPompiliusRegular;
     font-size: 24px;
     color: #fff;
 
@@ -185,7 +196,7 @@ textarea{
 .top-phone{
     color: #fff;
     padding: 6px 15px;
-    font-family: lobster;
+    font-family: NautilusPompiliusRegular;
     font-size: 24px;
 
     -webkit-transition-property: color;
@@ -430,7 +441,7 @@ textarea{
 }
 .caption-big{
     font-size: 24px;
-    font-family: lobster;
+    font-family: NautilusPompiliusRegular;
 }
 .carousel-control.left,
 .carousel-control.right {
@@ -613,7 +624,7 @@ textarea{
 }
 .footer .comment>p:nth-of-type(2){
     font-size: 20px;
-    font-family: lobster;
+    font-family: NautilusPompiliusRegular;
     letter-spacing: 1px;
 }
 .social{
