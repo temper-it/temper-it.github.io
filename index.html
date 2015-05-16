@@ -27,7 +27,6 @@
   <link href="css/styles.css" rel="stylesheet">
 
   <link href='http://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
   <title>Создание сайтов и веб-приложений</title>
 </head>
@@ -36,8 +35,8 @@
 <nav class="navbar navbar-beauty navbar-fixed-top">
   <div class="container-fluid menu-padding">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -73,7 +72,10 @@
              <input type="phone" name="phone" class="form-control" placeholder="Ваш номер телефона" aria-describedby="sizing-addon1">
              <div class="input-group-btn">
                <div class="btn-group btn-group-lg" role="group">
-                 <button type="submit" class="btn btn-default">Заказать звонок</button>
+                 <button type="submit" class="btn btn-default">
+                   <span class="fa fa-refresh fa-spin sending hidden"> </span>
+                   Заказать звонок
+                 </button>
                </div>
              </div>
            </div>
@@ -703,7 +705,10 @@
             <input type="email" name="email" class="form-control" placeholder="Ваш email" aria-describedby="sizing-addon1"/>
             <textarea name="message" class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
             <div class="btn-group btn-group-lg" role="group">
-              <button type="submit" class="btn">Отправить</button>
+              <button type="submit" class="btn">
+                <span class="fa fa-refresh fa-spin sending hidden"> </span>
+                Отправить
+              </button>
             </div>
           </form>
         </div>
@@ -776,6 +781,17 @@
                 paddingTop = parseInt($('body').css('padding-top')) || 60,
                 pos = $(href).offset().top - paddingTop;
             $('html,body').animate({scrollTop: pos}, 'slow', function() {});
+        });
+        
+        $('form button[type="submit"]').on('click', function(event) { 
+            var btn = $(event.target);
+            var spin = btn.find('.sending');
+            spin.removeClass('hidden');
+        });
+        
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
         });
 
         //http://www.owlcarousel.owlgraphic.com/
