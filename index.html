@@ -35,7 +35,7 @@
 <nav class="navbar navbar-beauty navbar-fixed-top">
   <div class="container-fluid menu-padding">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -760,6 +760,11 @@
             var btn = $(event.target);
             var spin = btn.find('.sending');
             spin.removeClass('hidden');
+        });
+        
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
         });
 
         //http://www.owlcarousel.owlgraphic.com/
