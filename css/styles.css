@@ -758,4 +758,17 @@ textarea{
         font-size: 26px;
     }
 }
+@media only screen and (max-width: 767px){
+    .nav>li>a{
+        color: #cc3300;
+        background-color: #fcfcfc;
+    }
+    .nav>li>a:hover,
+    .nav>li>a:focus,
+    .nav>li>a:active{
+        background-color: #fcfcfc;
+        color: #cc3300;
+        border-bottom-color: #cc3300;
+    }
+}
 
