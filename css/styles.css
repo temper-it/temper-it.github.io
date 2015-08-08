@@ -8,6 +8,13 @@
     font-style: normal;
     font-weight: normal;
 }
+/* font-family: "Chunq"; */
+@font-face {
+    font-family: "Chunq";
+    src: url("../fonts/Chunq.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 html{
     height: 100%;
@@ -175,7 +182,7 @@ textarea{
     border-bottom-color: #cc3300;
 }
 .logo{
-    font-family: NautilusPompiliusRegular;
+    font-family: Chunq;
     font-size: 24px;
     color: #fff;
 
@@ -196,7 +203,7 @@ textarea{
 .top-phone{
     color: #fff;
     padding: 6px 15px;
-    font-family: NautilusPompiliusRegular;
+    font-family: Chunq;
     font-size: 24px;
 
     -webkit-transition-property: color;
@@ -624,8 +631,9 @@ textarea{
     margin-left: 5px;
 }
 .copyright{
-    color: #666;
+    color: #fff;
     width: 100%;
+    font-family: Chunq;
     text-align: center;
 }
 .footer .comment>p:nth-of-type(1){
