@@ -1,0 +1,161 @@
+﻿
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Агентство недвижимости</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Снять квартиру без посредников. Выгодные предложения. Быстрый поиск! Самые низкие цены в Ярославле. Юридическая помощь в составлении договора" >
+    <meta name="keywords" content="сниму, сниму комнату, сниму квартиру, аренда жилья, агентство недвижимости, риелтор, ярославль, недвидимость в ярославле, аренда квартир без посредников в Ярославле, сниять квартиру" >
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/buttons.css"/>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery-ui.js"></script>
+    <script type="text/javascript" src="./js/jquery.equalheights.js"></script>
+    <script type="text/javascript" src="./js/jquery.noty.packaged.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+
+<!--===================header=====================-->
+
+<header id="header">
+    <div class="container">
+        <div class="sixteen columns">
+            <div align="center">
+                <img src="images/crown.png">
+                <h2>Ярославль</h2>
+                <div class="text_hr" style="width: 35%;">
+                    <h3>агентство недвижимости</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sixteen columns">
+            <div align="center">
+                <h2>Сниму комнату/квартиру</h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--===================content====================-->
+
+<div id="content">
+    <section id="request-form">
+        <div class="container">
+            <div class="sixteen columns clearfix">
+
+                <div class="five columns alpha"><!--contacts-send-form-->
+                    <div class="user-contacts">
+                        <form id="contacts">
+                            <input id="name" name="name" type="text" class="left-block-input default-text"
+                                   style="border-radius: 20px; width: 270px;" value="Введите имя"
+                                   required="Поле обязательно для заполнения!" maxlength="255"/>
+                            <input id="phone" name="phone" type="text" class="left-block-input default-text"
+                                   style="border-radius: 20px; width: 270px;" value="Введите телефон"
+                                   required="Поле обязательно для заполнения!" maxlength="255"/>
+                            <input id="email" name="email" type="text" class="left-block-input default-text"
+                                   style="border-radius: 20px; width: 270px;" value="Введите e-mail"
+                                   required="Поле обязательно для заполнения!" maxlength="255"/>
+                        </form>
+                    </div>
+                    <div>
+                        <p>Ваши контактные данные в безопасности<br>и не будут переданы третьим лицам</p>
+                    </div>
+                </div>
+
+                <div class="six columns"><!--phone-img-->
+                    <div class="cnt-title">
+                        <p class="th2">Оставьте заявку</p>
+                    </div>
+                    <div class="phone-img-cnt">
+                        <img src="images/phone.png" class="phone-img"/>
+                    </div>
+                    <div>
+                        <div class="red-button-div">
+                            <img src="images/button.png" class="red-button" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="five column omega"><!--search-param-form-->
+                    <div class="cnt-title">
+                        <p class="th2">Ищу:</p>
+                    </div>
+                    <div class="search-params">
+                        <form id="params">
+                            <select id="apartament-type" name="apartamenttype" class="right-block-input">
+                                <option value="Комнату">Комнату</option>
+                                <option value="Квартиру">Квартиру</option>
+                            </select>
+                            <select id="yard" name="yard" class="right-block-input" style="padding-left: 80px;">
+                                <option value="Кировский район">Кировский район</option>
+                                <option value="Красноперекопский район">Красноперекопский район</option>
+                                <option value="Заволжский район">Заволжский район</option>
+                                <option value="Ленинский район">Ленинский район</option>
+                                <option value="Фрунзенский район">Фрунзенский район</option>
+                                <option value="Дзержинский район">Дзержинский район</option>
+                            </select>
+                            <select id="furniture" name="furniture" class="right-block-input">
+                                <option value="С мебелью">С мебелью</option>
+                                <option value="Без мебели">Без мебели</option>
+                            </select>
+                            <input id="amount" name="amount" type="text" style="text-align: center; border-radius: 20px; width: 260px;" disabled/>
+                            <div id="slider-range" style="margin-bottom: 20px;"></div>
+                            <textarea id="user-notes" name="usernotes" value="Примечание" class="default-text"></textarea>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="section clear_self res">
+            <div align="center" class="work_ord_div">
+                <h2 class="work_ord_txt">КАК МЫ РАБОТАЕМ</h2>
+            </div>
+            <div class="work_ord pt_bold">
+                <div class="item clear_self mt">
+                    <div class="pik pie"></div>
+                    <div class="txt"><span>Вы заполняете заявку на поиск квартиры или комнаты</span></div>
+                </div>
+                <div class="item clear_self fl_r mt">
+                    <div class="pik pie p4"></div>
+                    <div class="txt"><span>Вы <span class="accent">ПОЛУЧАЕТЕ</span> бесплатную консультацию менеджера, который предоставит Вам 5 наиболее выгодных для Вас вариантов, а также информацию о стоимости наших услуг</span></div>
+                </div>
+                <div class="item clear_self mt">
+                    <div class="pik pie p3"></div>
+                    <div class="txt"><span>Мы <span class="accent">ОРГАНИЗУЕМ</span> просмотры понравившихся Вам объектов в удобное для Вас время</span></div>
+                </div>
+                <div class="item clear_self fl_r mt">
+                    <div class="pik pie p2"></div>
+                    <div class="txt"><span>Вы получаете бесплатную <span class="accent">КОНСУЛЬТАЦИЮ НАШЕГО ЮРИСТА</span> о предстоящей сделке</span></div>
+                </div>
+                <div class="item clear_self mt">
+                    <div class="pik pie p5"></div>
+                    <div class="txt"><span>Вы <span class="accent">ПОЛУЧАЕТЕ ЖИЛЬЕ</span>, которое выбрали и разработанный для Вас <span class="accent">ДОГОВОР НАЙМА</span> жилого помещения, который гарантирует защиту Ваших прав и интересов</span></div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!--===================footer=====================-->
+
+<footer>
+    <div class="container">
+        <div class="sixteen columns alpha omega">
+            <p class="contacts"><span>* Контакты:<br>
+                Агентство недвижимости "Ярославль"<br>
+                <span>* Оплата услуг<br>
+                Стоимость услуг по подбору жилья составляет 10% от годовой суммы заключаемого договора найма жилого помещения и оплачивается после заключения данного договора наличными денежными средствами</p>
+                </span>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
