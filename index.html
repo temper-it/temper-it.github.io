@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,7 +53,7 @@
         <li><a href="#portfolio-section" class="page-scroll">Наши работы</a></li>
         <li><a href="#footer" class="page-scroll">Контакты</a></li>
       </ul>
-      <div class="pull-right hidden-sm hidden-xs top-phone">+7 (906) 525-16-23</span></div>
+      <div class="pull-right hidden-sm hidden-xs top-phone">+7 (906) 525-16-23</div>
     </div>
   </div>
 </nav>
@@ -69,7 +69,7 @@
          <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail">
            <input type="text" value="temper-it.com" name="hostname" hidden="hidden">
            <div class="input-group input-group-lg">
-             <input type="phone" name="phone" class="form-control" placeholder="Ваш номер телефона" aria-describedby="sizing-addon1">
+             <input type="phone" name="phone" class="form-control" placeholder="Ваш номер телефона">
              <div class="input-group-btn">
                <div class="btn-group btn-group-lg" role="group">
                  <button type="submit" class="btn btn-default">
@@ -651,32 +651,32 @@
       <div class="owl-carousel">
         <div class="item">
           <a href="http://book-quest.com" target="_blank">
-            <img src="images/works/book-quest.jpg" class="img-responsive">
+            <img src="images/works/book-quest.jpg" class="img-responsive" alt="book-quest.com">
           </a>
         </div>
         <div class="item">
           <a href="http://rooms76.com" target="_blank">
-            <img src="images/works/rooms76.jpg" class="img-responsive">
+            <img src="images/works/rooms76.jpg" class="img-responsive" alt="rooms76.com">
           </a>
         </div>
         <div class="item">
           <a href="http://glazunovsemenov.ru" target="_blank">
-            <img src="images/works/gis.jpg" class="img-responsive">
+            <img src="images/works/gis.jpg" class="img-responsive" alt="glazunovsemenov.ru">
           </a>
         </div>
         <div class="item">
           <a href="http://dorstroy.github.io/" target="_blank">
-            <img src="images/works/dorstroy.jpg" class="img-responsive">
+            <img src="images/works/dorstroy.jpg" class="img-responsive" alt="dorstroy">
           </a>
         </div>
         <div class="item">
           <a href="http://fitness-mom-and-baby.github.io" target="_blank">
-            <img src="images/works/fitness.jpg" class="img-responsive">
+            <img src="images/works/fitness.jpg" class="img-responsive" alt="fitness-mom-and-baby">
           </a>
         </div>
         <div class="item">
           <a href="http://rooms76.com/yaroslavl/eight.html" target="_blank">
-            <img src="images/works/slender.png" class="img-responsive">
+            <img src="images/works/slender.png" class="img-responsive" alt="rooms76.com/yaroslavl/eight.html">
           </a>
         </div>
       </div>
@@ -706,8 +706,8 @@
         <div class="input-group input-group-lg text-right">
           <form role="form" method="POST" action="http://nodesendmail.herokuapp.com/sendmail">
             <input type="text" value="temper-it.com" name="hostname" hidden="hidden">
-            <input type="phone" name="phone" class="form-control" placeholder="Ваш номер телефона" aria-describedby="sizing-addon1"/>
-            <input type="email" name="email" class="form-control" placeholder="Ваш email" aria-describedby="sizing-addon1"/>
+            <input type="phone" name="phone" class="form-control" placeholder="Ваш номер телефона"/>
+            <input type="email" name="email" class="form-control" placeholder="Ваш email"/>
             <textarea name="message" class="form-control" rows="4" placeholder="Ваше сообщение"></textarea>
             <div class="btn-group btn-group-lg" role="group">
               <button type="submit" class="btn">
@@ -722,34 +722,6 @@
   </div>
   <div class="copyright">Temper-IT &#169; 2015</div>
 </div>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-(function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-        try {
-            w.yaCounter30087284 = new Ya.Metrika({id:30087284,
-                    webvisor:true,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-        } catch(e) { }
-    });
-
-    var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-    if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-})(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/30087284" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-</body>
 
 <script src="vendor/js/jquery.min.js"></script>
 <script src="vendor/js/jquery.equalheights.min.js"></script>
@@ -821,4 +793,32 @@
         });
     });
 </script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+  (function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+      try {
+        w.yaCounter30087284 = new Ya.Metrika({id:30087284,
+          webvisor:true,
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true});
+      } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+  })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/30087284" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
 </html>
