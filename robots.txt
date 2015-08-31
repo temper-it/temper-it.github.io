@@ -1,2 +1,2 @@
-User-agent: YaDirectFetcher
-Disallow: /
+User-agent: *
+Disallow:
