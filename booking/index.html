@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="онлайн бронирование, модуль бронирования, бронирование на сайт">
+  <meta name="description" content="Модуль онлайн-бронирования на Ваш сайт">
+  <meta name="revisit-after" content="1 days">
+  <meta name="author" content="">
+
+  <meta property="og:title" content="Модуль онлайн-бронирования на Ваш сайт" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://temper-it.com/images/avatar.png" />
+  <meta property="og:url" content="http://temper-it.com/" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="http://temper-it.com/" />
+  <meta property="og:description" content="Модуль онлайн-бронирования на Ваш сайт">
+
+  <link rel="icon" href="images/favicon.ico">
+  <link href="../vendor/css/reset.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!--link href="../vendor/css/animate.css" rel="stylesheet">
+  <link href="../vendor/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+  <link href="../vendor/owl-carousel/css/owl.theme.default.min.css" rel="stylesheet"-->
+  <link href="styles.css" rel="stylesheet">
+
+  <link href='http://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  <title>Модуль онлайн-бронирования на Ваш сайт</title>
+</head>
+
+<body id="" data-spy="scroll" data-target="#navbar">
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-xs-6">Система бронирования</div>
+      <div class="col-xs-6 text-right">+7 (906) 525-16-23</div>
+   </div>
+</div>
+<h1>Модуль онлайн-бронирования на Ваш сайт</h1>
+
+<div class="text-center leave-request">
+   Оставьте заявку прямо сейчас и получите скидку 20%
+</div>
+
+<form class="form-inline">
+   <div class="form-group">
+      <div class="input-group">
+         <input type="text" class="form-control" placeholder="Ваш телефон">
+      </div>
+   </div>
+   <button type="submit" class="btn btn-primary">
+      <span class="fa fa-refresh fa-spin sending hidden"> </span>
+      Получить скидку
+   </button>
+</form>
+
+<h1>Мы предлагаем:</h1>
+<ul>
+   <li></li>
+</ul>
+
+<!-- Yandex.Metrika counter -->
+<!--script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter30087284 = new Ya.Metrika({id:30087284,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/30087284" style="position:absolute; left:-9999px;" alt="" /></div></noscript-->
+<!-- /Yandex.Metrika counter -->
+</body>
+
+<script src="../vendor/js/jquery.min.js"></script>
+<script src="../vendor/js/jquery.equalheights.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../vendor/js/wow.min.js"></script>
+<script src="../vendor/owl-carousel/js/owl.carousel.min.js"></script>
+<script>
+    $(window).resize(function(){
+        $('.site-caption').equalHeights();
+        $('.site-img').equalHeights();
+    });
+
+    $( document ).ready( function(){
+        $(window).resize();
+
+        $('body').scrollspy({ target: '.navbar', offset: 65 });
+
+        new WOW().init();
+
+        // jQuery to shrink the navbar on scroll
+        $(window).scroll(function() {
+            if ($(".navbar").offset().top > 43) {
+                $(".navbar-fixed-top").addClass("navbar-shrink");
+            } else {
+                $(".navbar-fixed-top").removeClass("navbar-shrink");
+            }
+        });
+
+        /*** Анимация при скроле ***/
+        $('.page-scroll').on('click', function(event) {
+            event.preventDefault();
+            var href =
+                $(this).attr('href') || $(this).attr('data-href'),
+                paddingTop = parseInt($('body').css('padding-top')) || 60,
+                pos = $(href).offset().top - paddingTop;
+            $('html,body').animate({scrollTop: pos}, 'slow', function() {});
+        });
+        
+        $('form button[type="submit"]').on('click', function(event) { 
+            var btn = $(event.target);
+            var spin = btn.find('.sending');
+            spin.removeClass('hidden');
+        });
+        
+        // Closes the Responsive Menu on Menu Item Click
+        $('.navbar-collapse ul li a').click(function() {
+            $('.navbar-toggle:visible').click();
+        });
+
+        //http://www.owlcarousel.owlgraphic.com/
+        $('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 15,
+          nav: false,
+          responsive:{
+            0:{
+              items:1
+            },
+            600:{
+              items:3
+            },
+            1000:{
+              items:5
+            }
+          },
+          autoplay: true,
+          autoplayTimeout: 2500,
+          autoplayHoverPause: true
+        });
+    });
+</script>
+</html>
