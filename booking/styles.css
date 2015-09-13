@@ -1,0 +1,16 @@
+body{
+   background-image: url('bg1.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-attachment: fixed;
+}
+
+h1{
+   text-align: center;
+   margin: 20px auto;
+}
+.leave-request{
+   font-size: 24px;
+}
+
